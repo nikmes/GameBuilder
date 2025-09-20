@@ -105,6 +105,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../raylib/src/;../../libccd/src;../lwlog/lwlog/include;../json/include;../imgui;../rlImGui;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,13 +132,19 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\libccd\src\ccd.vcxproj">
+      <Project>{c43ba41c-faa3-3732-ad34-ad683ffd9716}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\lwlog\lwlog_lib.vcxproj">
+      <Project>{d69195e3-4c18-30be-a634-03f270864fc9}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\raylib\raylib\external\glfw\src\glfw.vcxproj">
       <Project>{3c6f60b8-3572-3e29-a0ae-d54eae915670}</Project>
     </ProjectReference>
     <ProjectReference Include="..\raylib\raylib\raylib.vcxproj">
       <Project>{c0349af0-3dcd-3221-8b61-cdbe3e2ac8dc}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\rlImGui\build\rlImGui.vcxproj">
+    <ProjectReference Include="..\rlImGui\ownproject\rlImGui.vcxproj">
       <Project>{dece814c-4aae-00e8-53c6-8bbebf246749}</Project>
     </ProjectReference>
   </ItemGroup>
