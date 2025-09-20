@@ -21,5 +21,31 @@
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\services\window\DockRegion.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="src\services\window\Layout.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="src\services\window\Window.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+    <ClCompile Include="src\services\window\WindowManager.cpp">
+      <Filter>Source Files\services</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\services\window\DockRegion.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="src\services\window\Layout.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="src\services\window\Window.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
+    <ClInclude Include="src\services\window\WindowManager.h">
+      <Filter>Source Files\services</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

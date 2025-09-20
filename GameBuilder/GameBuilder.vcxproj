@@ -130,6 +130,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\services\window\DockRegion.cpp" />
+    <ClCompile Include="src\services\window\Layout.cpp" />
+    <ClCompile Include="src\services\window\Window.cpp" />
+    <ClCompile Include="src\services\window\WindowManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\libccd\src\ccd.vcxproj">
@@ -147,6 +151,12 @@
     <ProjectReference Include="..\rlImGui\ownproject\rlImGui.vcxproj">
       <Project>{dece814c-4aae-00e8-53c6-8bbebf246749}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\services\window\DockRegion.h" />
+    <ClInclude Include="src\services\window\Layout.h" />
+    <ClInclude Include="src\services\window\Window.h" />
+    <ClInclude Include="src\services\window\WindowManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
