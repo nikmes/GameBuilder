@@ -1,0 +1,20 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.0/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.0/Templates/CPackConfig.cmake.in
+C:/Users/nikme/source/repos/GameBuilder/raylib/cmake/CompileDefinitions.cmake
+C:/Users/nikme/source/repos/GameBuilder/raylib/cmake/GlfwImport.cmake
+C:/Users/nikme/source/repos/GameBuilder/raylib/cmake/InstallConfigurations.cmake
+C:/Users/nikme/source/repos/GameBuilder/raylib/cmake/JoinPaths.cmake
+C:/Users/nikme/source/repos/GameBuilder/raylib/cmake/LibraryConfigurations.cmake
+C:/Users/nikme/source/repos/GameBuilder/raylib/cmake/LibraryPathToLinkerFlags.cmake
+C:/Users/nikme/source/repos/GameBuilder/raylib/cmake/PackConfigurations.cmake
+C:/Users/nikme/source/repos/GameBuilder/raylib/cmake/PopulateConfigVariablesLocally.cmake
+C:/Users/nikme/source/repos/GameBuilder/raylib/cmake/raylib-config-version.cmake
+C:/Users/nikme/source/repos/GameBuilder/raylib/cmake/raylib-config.cmake
+C:/Users/nikme/source/repos/GameBuilder/raylib/raylib.pc.in
+C:/Users/nikme/source/repos/GameBuilder/raylib/src/CMakeLists.txt

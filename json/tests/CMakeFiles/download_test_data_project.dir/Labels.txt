@@ -1,0 +1,13 @@
+# Target labels
+ download_test_data_project
+# Source files and their labels
+C:/Users/nikme/source/repos/GameBuilder/json/tests/CMakeFiles/download_test_data_project
+C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/ab9986e91f4316031c38eef23f8ab11d/download_test_data_project.rule
+C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/98ac9647effed670e1d441cbe656648f/download_test_data_project-complete.rule
+C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/3199e1ef0a6c5a516ca0a25de2eefcff/download_test_data_project-build.rule
+C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/3199e1ef0a6c5a516ca0a25de2eefcff/download_test_data_project-configure.rule
+C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/3199e1ef0a6c5a516ca0a25de2eefcff/download_test_data_project-download.rule
+C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/3199e1ef0a6c5a516ca0a25de2eefcff/download_test_data_project-install.rule
+C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/3199e1ef0a6c5a516ca0a25de2eefcff/download_test_data_project-mkdir.rule
+C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/3199e1ef0a6c5a516ca0a25de2eefcff/download_test_data_project-patch.rule
+C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/3199e1ef0a6c5a516ca0a25de2eefcff/download_test_data_project-update.rule

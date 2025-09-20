@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{96AEA0FA-8245-3580-BAF1-7CC78C6A58A2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/json -BC:/Users/nikme/source/repos/GameBuilder/json --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.0\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\nikme\source\repos\GameBuilder\json\cmake\config.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\cmake\nlohmann_jsonConfigVersion.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\cmake\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/json -BC:/Users/nikme/source/repos/GameBuilder/json --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.0\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\nikme\source\repos\GameBuilder\json\cmake\config.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\cmake\nlohmann_jsonConfigVersion.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\cmake\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/json -BC:/Users/nikme/source/repos/GameBuilder/json --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.0\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\nikme\source\repos\GameBuilder\json\cmake\config.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\cmake\nlohmann_jsonConfigVersion.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\cmake\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/json/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/json -BC:/Users/nikme/source/repos/GameBuilder/json --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/json/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTest.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTestTargets.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CTestUseLaunchers.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.0\Modules\DartConfiguration.tcl.in;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\nikme\source\repos\GameBuilder\json\cmake\config.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\cmake\nlohmann_jsonConfigVersion.cmake.in;C:\Users\nikme\source\repos\GameBuilder\json\cmake\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\ZERO_CHECK.vcxproj">
+      <Project>{7A39A310-14F0-34E3-9DF0-F2ACAC5C22AE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\abi\diag\abi_compat_diag.vcxproj">
+      <Project>{3936C8F6-7D67-3E9A-B14E-F101FFCB0BFC}</Project>
+      <Name>abi_compat_diag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\abi\diag\abi_compat_diag_off.vcxproj">
+      <Project>{F4520334-BD55-3F72-8A80-D9800F75015B}</Project>
+      <Name>abi_compat_diag_off</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\abi\diag\abi_compat_diag_on.vcxproj">
+      <Project>{FB952BDB-289C-3425-A1EB-687EF5A6F856}</Project>
+      <Name>abi_compat_diag_on</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\abi\inline_ns\abi_compat_inline_ns.vcxproj">
+      <Project>{9F42057E-EA34-3F9E-A32A-556EF0EF12F2}</Project>
+      <Name>abi_compat_inline_ns</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\abi\abi_compat_main.vcxproj">
+      <Project>{9CC77A4B-27C6-3C99-8229-F85F17B86986}</Project>
+      <Name>abi_compat_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\abi\config\abi_config_custom.vcxproj">
+      <Project>{0AFA3446-23AA-303D-93D7-40D57F9A944A}</Project>
+      <Name>abi_config_custom</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\abi\config\abi_config_default.vcxproj">
+      <Project>{637EB96D-2AC1-3D48-8127-6E447E3C3C09}</Project>
+      <Name>abi_config_default</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\abi\config\abi_config_noversion.vcxproj">
+      <Project>{CCD500AA-4E24-331C-9258-BDCB4F9912B3}</Project>
+      <Name>abi_config_noversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-algorithms_cpp11.vcxproj">
+      <Project>{0A6CE320-0652-31E2-B100-42892AEFECD9}</Project>
+      <Name>test-algorithms_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-allocator_cpp11.vcxproj">
+      <Project>{94C72B6A-5CCC-3E63-A55D-8E97EA467D4C}</Project>
+      <Name>test-allocator_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-alt-string_cpp11.vcxproj">
+      <Project>{2A6EDCA6-6414-3C34-B110-D6D4095478CF}</Project>
+      <Name>test-alt-string_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-assert_macro_cpp11.vcxproj">
+      <Project>{09F7BAC5-C56D-3911-829A-FD18395C9551}</Project>
+      <Name>test-assert_macro_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-binary_formats_cpp11.vcxproj">
+      <Project>{8433CFB4-F3B6-324A-B66E-B224B1E3BC7A}</Project>
+      <Name>test-binary_formats_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-bjdata_cpp11.vcxproj">
+      <Project>{E5A4BF2B-88C8-3AB0-9402-A78185157EBA}</Project>
+      <Name>test-bjdata_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-bson_cpp11.vcxproj">
+      <Project>{54F00531-E61D-30E5-A038-BA8C14004C09}</Project>
+      <Name>test-bson_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-byte_container_with_subtype_cpp11.vcxproj">
+      <Project>{BBB9039B-7FEA-3AA4-AFFD-72B1BE96BA5F}</Project>
+      <Name>test-byte_container_with_subtype_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-capacity_cpp11.vcxproj">
+      <Project>{D500AF54-6B36-3DF5-9F6A-F992A175EE3C}</Project>
+      <Name>test-capacity_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-cbor_cpp11.vcxproj">
+      <Project>{D09DF4C3-8960-3C39-952F-C0A3776FE97E}</Project>
+      <Name>test-cbor_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-class_const_iterator_cpp11.vcxproj">
+      <Project>{5C92D366-899C-3CE0-93E1-C5554E51ABE6}</Project>
+      <Name>test-class_const_iterator_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-class_iterator_cpp11.vcxproj">
+      <Project>{F2550ACD-7852-3238-A7A5-C89589055825}</Project>
+      <Name>test-class_iterator_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-class_lexer_cpp11.vcxproj">
+      <Project>{AD8BF30C-5E4E-328B-A3B8-8D55838B91C9}</Project>
+      <Name>test-class_lexer_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-class_parser_cpp11.vcxproj">
+      <Project>{A15CAEEC-21CC-34CB-B2AA-E55EB3838DCB}</Project>
+      <Name>test-class_parser_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-class_parser_diagnostic_positions_cpp11.vcxproj">
+      <Project>{28FDCDF7-6504-31DE-AA80-70C8E809A4EA}</Project>
+      <Name>test-class_parser_diagnostic_positions_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-comparison_cpp11.vcxproj">
+      <Project>{95338447-4344-3C3F-84A3-BC670655F371}</Project>
+      <Name>test-comparison_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-comparison_cpp20.vcxproj">
+      <Project>{5A59AE71-C1C5-3CD8-A55F-603B59166A57}</Project>
+      <Name>test-comparison_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-comparison_legacy_cpp11.vcxproj">
+      <Project>{BF160CD5-91D2-3A58-90C0-CBC69333D275}</Project>
+      <Name>test-comparison_legacy_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-comparison_legacy_cpp20.vcxproj">
+      <Project>{2065978C-A4BC-3EDE-84D0-6158FC28B1C5}</Project>
+      <Name>test-comparison_legacy_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-concepts_cpp11.vcxproj">
+      <Project>{CFD50FA5-EBCC-3538-B281-76B51AE46F61}</Project>
+      <Name>test-concepts_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-constructor1_cpp11.vcxproj">
+      <Project>{8CE51FD0-55FF-3DC5-9FF7-ACDA6F2E9C25}</Project>
+      <Name>test-constructor1_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-constructor2_cpp11.vcxproj">
+      <Project>{16545450-4ADC-307F-B545-2CB34148A892}</Project>
+      <Name>test-constructor2_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-convenience_cpp11.vcxproj">
+      <Project>{49D2264E-1D70-399B-B083-A52047F13CE1}</Project>
+      <Name>test-convenience_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-conversions_cpp11.vcxproj">
+      <Project>{4FCA5CE0-FAFB-316B-945B-16D47E411798}</Project>
+      <Name>test-conversions_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-conversions_cpp14.vcxproj">
+      <Project>{613D9E49-67A9-38C0-B6B5-A826F9FC6264}</Project>
+      <Name>test-conversions_cpp14</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-conversions_cpp17.vcxproj">
+      <Project>{EF555775-0F11-3BB5-AD06-1815113D2BEB}</Project>
+      <Name>test-conversions_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-custom-base-class_cpp11.vcxproj">
+      <Project>{B15BEA9F-D5A7-34DC-9392-101DEE6B30DD}</Project>
+      <Name>test-custom-base-class_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-deserialization_cpp11.vcxproj">
+      <Project>{C2D61617-5CCF-3ADA-A1E1-63E988F3B2C6}</Project>
+      <Name>test-deserialization_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-diagnostic-positions-only_cpp11.vcxproj">
+      <Project>{6675DBE9-077F-385B-842B-471A3870CF3E}</Project>
+      <Name>test-diagnostic-positions-only_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-diagnostic-positions_cpp11.vcxproj">
+      <Project>{42FD72BA-DF18-32EB-93AA-C5595AB7D6FF}</Project>
+      <Name>test-diagnostic-positions_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-diagnostics_cpp11.vcxproj">
+      <Project>{1B29C4EA-E0F0-320F-A296-F7F30B1756ED}</Project>
+      <Name>test-diagnostics_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-disabled_exceptions_cpp11.vcxproj">
+      <Project>{68DDE5E9-425B-3B86-BE5C-5422266A2D54}</Project>
+      <Name>test-disabled_exceptions_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-element_access1_cpp11.vcxproj">
+      <Project>{38679F07-7246-35AE-875B-95C04EF01C81}</Project>
+      <Name>test-element_access1_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-element_access2_cpp11.vcxproj">
+      <Project>{6E0109F3-BA7A-3606-8B2F-39FD7A82AE25}</Project>
+      <Name>test-element_access2_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-element_access2_cpp14.vcxproj">
+      <Project>{D12467E4-EDE3-31C4-B256-FEEF52BC47DC}</Project>
+      <Name>test-element_access2_cpp14</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-element_access2_cpp17.vcxproj">
+      <Project>{8742FA26-AB79-3354-AD8C-1647BA0DE45D}</Project>
+      <Name>test-element_access2_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-hash_cpp11.vcxproj">
+      <Project>{F99B2E6C-47E5-3F48-A0C0-FB61C804790A}</Project>
+      <Name>test-hash_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-inspection_cpp11.vcxproj">
+      <Project>{C6A81874-37A5-31A7-802C-03DF235D3E5D}</Project>
+      <Name>test-inspection_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-items_cpp11.vcxproj">
+      <Project>{856C09C0-C383-3270-BA0B-485EF8FAF465}</Project>
+      <Name>test-items_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-items_cpp17.vcxproj">
+      <Project>{1FD35386-3154-36CE-B144-506493F39CCF}</Project>
+      <Name>test-items_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-iterators1_cpp11.vcxproj">
+      <Project>{452F6EF5-E968-3AB0-BADA-905977395C9B}</Project>
+      <Name>test-iterators1_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-iterators2_cpp11.vcxproj">
+      <Project>{EEAEBAB1-F61B-3A79-9F6C-8BBE33CAD641}</Project>
+      <Name>test-iterators2_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-iterators2_cpp20.vcxproj">
+      <Project>{79AC051D-023B-3917-90F8-88495E1428BA}</Project>
+      <Name>test-iterators2_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-iterators3_cpp11.vcxproj">
+      <Project>{D35A904C-94F2-3DCE-9600-93ED71C410C8}</Project>
+      <Name>test-iterators3_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-iterators3_cpp14.vcxproj">
+      <Project>{26483721-8F85-3261-9B2E-727A10A657DC}</Project>
+      <Name>test-iterators3_cpp14</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-json_patch_cpp11.vcxproj">
+      <Project>{BEAB7F20-8EB7-3828-88A3-288140973CC6}</Project>
+      <Name>test-json_patch_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-json_pointer_cpp11.vcxproj">
+      <Project>{0EDD750C-FF28-3389-81E8-CCE5BB8BB285}</Project>
+      <Name>test-json_pointer_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-json_pointer_cpp20.vcxproj">
+      <Project>{AE214396-A04D-3BD0-A6CA-4AA81D1288FF}</Project>
+      <Name>test-json_pointer_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-large_json_cpp11.vcxproj">
+      <Project>{1035C75D-3FE5-38F7-B588-9AE637B77870}</Project>
+      <Name>test-large_json_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-locale-cpp_cpp11.vcxproj">
+      <Project>{FFC4E350-A273-35D6-901C-BC10CEC89C66}</Project>
+      <Name>test-locale-cpp_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-merge_patch_cpp11.vcxproj">
+      <Project>{EFE01E85-B66F-3719-A863-43FA23C6107E}</Project>
+      <Name>test-merge_patch_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-meta_cpp11.vcxproj">
+      <Project>{3903BFB5-426B-3BCE-8617-F6C77282192C}</Project>
+      <Name>test-meta_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-modifiers_cpp11.vcxproj">
+      <Project>{C9EFC790-D3F2-38AF-95DC-8B15351364A1}</Project>
+      <Name>test-modifiers_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-msgpack_cpp11.vcxproj">
+      <Project>{36DC3EEB-F286-3391-8CDE-BFDE993D9FB8}</Project>
+      <Name>test-msgpack_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-msgpack_cpp17.vcxproj">
+      <Project>{0330F92F-AE80-3CD0-BFC4-0C117582C803}</Project>
+      <Name>test-msgpack_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-no-mem-leak-on-adl-serialize_cpp11.vcxproj">
+      <Project>{87665A6E-A15F-31D6-9BED-D9EFB962B436}</Project>
+      <Name>test-no-mem-leak-on-adl-serialize_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-noexcept_cpp11.vcxproj">
+      <Project>{2B1195BA-0498-3FD4-BA40-5B80BFF8263F}</Project>
+      <Name>test-noexcept_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-ordered_json_cpp11.vcxproj">
+      <Project>{6580798A-A777-3B28-B0F5-31265B5A282E}</Project>
+      <Name>test-ordered_json_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-ordered_map_cpp11.vcxproj">
+      <Project>{E5D49AD7-B8D5-3060-BF24-FB6AA30AA272}</Project>
+      <Name>test-ordered_map_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-pointer_access_cpp11.vcxproj">
+      <Project>{B656E339-9407-3C0C-904A-9B98DADC4FA8}</Project>
+      <Name>test-pointer_access_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-readme_cpp11.vcxproj">
+      <Project>{301762A4-7980-38EA-AEBB-4170447C7B96}</Project>
+      <Name>test-readme_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-reference_access_cpp11.vcxproj">
+      <Project>{193A7288-94B7-3FED-82CA-C764FF10E794}</Project>
+      <Name>test-reference_access_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-regression1_cpp11.vcxproj">
+      <Project>{7A16FD29-7922-332E-B825-68FED824BEFB}</Project>
+      <Name>test-regression1_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-regression1_cpp17.vcxproj">
+      <Project>{891D30F1-97C3-37F4-814F-E62199C6E7C9}</Project>
+      <Name>test-regression1_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-regression2_cpp11.vcxproj">
+      <Project>{CEC6A6E5-65D3-3901-8DCE-FEF8F3C02287}</Project>
+      <Name>test-regression2_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-regression2_cpp17.vcxproj">
+      <Project>{6725ED47-3639-3753-A283-AA3581B1501F}</Project>
+      <Name>test-regression2_cpp17</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-regression2_cpp20.vcxproj">
+      <Project>{20445C88-F03B-3974-9810-B8267622DDA9}</Project>
+      <Name>test-regression2_cpp20</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-serialization_cpp11.vcxproj">
+      <Project>{2DB54ECC-365A-3937-BDAF-B0675817A05C}</Project>
+      <Name>test-serialization_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-testsuites_cpp11.vcxproj">
+      <Project>{FAF6E8EC-A51B-3012-B708-B78D8B550BEA}</Project>
+      <Name>test-testsuites_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-to_chars_cpp11.vcxproj">
+      <Project>{2FF7DB80-710A-3BDC-939F-CF9684FE3C5C}</Project>
+      <Name>test-to_chars_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-type_traits_cpp11.vcxproj">
+      <Project>{374E7DF1-63A1-3B16-B663-0A3B7561FFEB}</Project>
+      <Name>test-type_traits_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-ubjson_cpp11.vcxproj">
+      <Project>{9FD58C8D-98EB-3BBB-B17C-14A259A02BCE}</Project>
+      <Name>test-ubjson_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-udl_cpp11.vcxproj">
+      <Project>{7E88E2E5-31D3-3137-9410-E52A788A2ED8}</Project>
+      <Name>test-udl_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-udt_cpp11.vcxproj">
+      <Project>{88EE147C-4DE5-399E-8D7D-1F38AB204925}</Project>
+      <Name>test-udt_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-udt_macro_cpp11.vcxproj">
+      <Project>{4CDE8776-6F94-34E5-A29C-FE0E948B36D5}</Project>
+      <Name>test-udt_macro_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-unicode1_cpp11.vcxproj">
+      <Project>{5DA04EC9-EF0D-346A-BD6D-8183A8D7F289}</Project>
+      <Name>test-unicode1_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-unicode2_cpp11.vcxproj">
+      <Project>{6289E9C2-AE76-3184-8D99-DBE812F3DE44}</Project>
+      <Name>test-unicode2_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-unicode3_cpp11.vcxproj">
+      <Project>{DDBF8287-EF78-30E8-A9CD-89ECE9523434}</Project>
+      <Name>test-unicode3_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-unicode4_cpp11.vcxproj">
+      <Project>{D14169C4-2581-30E8-B6D0-99643B9B963B}</Project>
+      <Name>test-unicode4_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-unicode5_cpp11.vcxproj">
+      <Project>{E189A15B-FE48-3D62-A24F-DF8B37BC8842}</Project>
+      <Name>test-unicode5_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-user_defined_input_cpp11.vcxproj">
+      <Project>{B972FF7F-DCA2-37FF-BFF9-683ABDDF8ED2}</Project>
+      <Name>test-user_defined_input_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-windows_h_cpp11.vcxproj">
+      <Project>{44F345E6-DD73-340E-96AC-4623C0AF0A54}</Project>
+      <Name>test-windows_h_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test-wstring_cpp11.vcxproj">
+      <Project>{2D7D3114-D8BB-3E30-A295-A4F33BFF9147}</Project>
+      <Name>test-wstring_cpp11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test_main.vcxproj">
+      <Project>{625B26C0-A384-3E61-A3F0-D4F2711D5A85}</Project>
+      <Name>test_main</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

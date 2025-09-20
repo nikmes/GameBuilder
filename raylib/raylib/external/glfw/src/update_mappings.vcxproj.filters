@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\8b7a8e1e1ecf763c38846e8658371e86\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\external\glfw\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\external\glfw\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\external\glfw\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FB9FFFE8-9777-3AF5-B0E3-289D4229166F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9B02C424-4A48-3F5E-B15B-54B721294D1A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

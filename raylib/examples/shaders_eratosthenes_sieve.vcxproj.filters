@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders\shaders_eratosthenes_sieve.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{56B3EC5E-CDC4-3B0D-9181-69D9AB87E7DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

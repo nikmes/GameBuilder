@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6415225E-08CD-356A-8B9E-53A5125A375A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/raylib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/raylib -BC:/Users/nikme/source/repos/GameBuilder/raylib --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/raylib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeOptions.txt;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\AddIfFlagCompiles.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\CompilerFlags.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\EnumOption.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\ParseConfigHeader.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\Uninstall.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/raylib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/raylib -BC:/Users/nikme/source/repos/GameBuilder/raylib --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/raylib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeOptions.txt;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\AddIfFlagCompiles.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\CompilerFlags.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\EnumOption.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\ParseConfigHeader.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\Uninstall.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/raylib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/raylib -BC:/Users/nikme/source/repos/GameBuilder/raylib --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/raylib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeOptions.txt;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\AddIfFlagCompiles.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\CompilerFlags.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\EnumOption.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\ParseConfigHeader.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\Uninstall.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/raylib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/raylib -BC:/Users/nikme/source/repos/GameBuilder/raylib --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/raylib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeCXXCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeRCCompiler.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\4.0.0\CMakeSystem.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeOptions.txt;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\AddIfFlagCompiles.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\CompilerFlags.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\EnumOption.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\ParseConfigHeader.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\Uninstall.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\nikme\source\repos\GameBuilder\raylib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\ZERO_CHECK.vcxproj">
+      <Project>{6C136158-B4F4-36D1-B85D-193ACB19E386}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\audio_mixed_processor.vcxproj">
+      <Project>{B172FC34-B261-3685-927F-7C41DFAEEF75}</Project>
+      <Name>audio_mixed_processor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\audio_module_playing.vcxproj">
+      <Project>{8A06399D-B255-3984-A809-BC43FAB88C1F}</Project>
+      <Name>audio_module_playing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\audio_music_stream.vcxproj">
+      <Project>{9FFDD887-2952-306B-9EE3-01776FDCA088}</Project>
+      <Name>audio_music_stream</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\audio_raw_stream.vcxproj">
+      <Project>{3157AF3B-4D36-32ED-B104-B18B853E9580}</Project>
+      <Name>audio_raw_stream</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\audio_sound_loading.vcxproj">
+      <Project>{8EA885E7-3E91-3B42-BD54-6F5832BEDF54}</Project>
+      <Name>audio_sound_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\audio_sound_multi.vcxproj">
+      <Project>{91653575-6CA2-3ECE-B186-0668C6044E2A}</Project>
+      <Name>audio_sound_multi</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\audio_sound_positioning.vcxproj">
+      <Project>{73B0A33D-8421-34BB-8123-6A0BF3FDAAA4}</Project>
+      <Name>audio_sound_positioning</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\audio_stream_effects.vcxproj">
+      <Project>{32A4C2D1-2525-330E-A40D-9C0FA9A83BCB}</Project>
+      <Name>audio_stream_effects</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_2d_camera.vcxproj">
+      <Project>{E53BA5FD-3AF1-3082-AF04-3788A4F1A352}</Project>
+      <Name>core_2d_camera</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_2d_camera_mouse_zoom.vcxproj">
+      <Project>{04F4C8F7-0930-3C82-9510-3641047404DD}</Project>
+      <Name>core_2d_camera_mouse_zoom</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_2d_camera_platformer.vcxproj">
+      <Project>{9D304B5C-8C63-3579-847F-7E88EFBBED27}</Project>
+      <Name>core_2d_camera_platformer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_2d_camera_split_screen.vcxproj">
+      <Project>{4E4FCE2A-9463-36DD-867E-CE7E52EB718D}</Project>
+      <Name>core_2d_camera_split_screen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_3d_camera_first_person.vcxproj">
+      <Project>{3B83E03B-3D24-3C7A-9488-8096DE998E9B}</Project>
+      <Name>core_3d_camera_first_person</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_3d_camera_fps.vcxproj">
+      <Project>{4775217E-DAE5-3283-BF72-4A9E853D77FA}</Project>
+      <Name>core_3d_camera_fps</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_3d_camera_free.vcxproj">
+      <Project>{3897CF0D-20D8-3977-9704-831E09FC74E6}</Project>
+      <Name>core_3d_camera_free</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_3d_camera_mode.vcxproj">
+      <Project>{68DB663A-23FF-38AD-882E-F43E812EAF32}</Project>
+      <Name>core_3d_camera_mode</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_3d_camera_split_screen.vcxproj">
+      <Project>{8008A585-4E48-3E3E-898A-61AD0F1E7F2D}</Project>
+      <Name>core_3d_camera_split_screen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_3d_picking.vcxproj">
+      <Project>{93C7E256-62DF-3632-AD18-DE29EAC479A9}</Project>
+      <Name>core_3d_picking</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_automation_events.vcxproj">
+      <Project>{611C0D8A-532B-343F-A149-C776DC6936AB}</Project>
+      <Name>core_automation_events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_basic_screen_manager.vcxproj">
+      <Project>{BC46856F-391C-373F-A89B-3ED26E69DD89}</Project>
+      <Name>core_basic_screen_manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_basic_window.vcxproj">
+      <Project>{04EEF538-43A2-37A6-943D-508781E64241}</Project>
+      <Name>core_basic_window</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_custom_frame_control.vcxproj">
+      <Project>{1DBD3E06-DA81-3B58-A18C-DB25FEB1D94B}</Project>
+      <Name>core_custom_frame_control</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_custom_logging.vcxproj">
+      <Project>{E28466A5-C8B5-3ADD-B16B-A2ED5BF858E7}</Project>
+      <Name>core_custom_logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_drop_files.vcxproj">
+      <Project>{EEC65260-8FD6-3351-8EE1-A867E9B057FA}</Project>
+      <Name>core_drop_files</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_high_dpi.vcxproj">
+      <Project>{61094F1B-E563-3174-B214-313BEEF04512}</Project>
+      <Name>core_high_dpi</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_input_gamepad.vcxproj">
+      <Project>{D6E54615-46F9-38B0-9D56-4F2C4F467A96}</Project>
+      <Name>core_input_gamepad</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_input_gestures.vcxproj">
+      <Project>{ED33D714-8AD3-3923-B534-7F40CADB1D6F}</Project>
+      <Name>core_input_gestures</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_input_gestures_testbed.vcxproj">
+      <Project>{DA7E7870-39DF-318A-AD2C-38F27884E0A5}</Project>
+      <Name>core_input_gestures_testbed</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_input_keys.vcxproj">
+      <Project>{0A945064-C6B4-386C-B1B9-1B34080EA3C4}</Project>
+      <Name>core_input_keys</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_input_mouse.vcxproj">
+      <Project>{64FE2493-04F2-312B-936E-E875AAFFBE93}</Project>
+      <Name>core_input_mouse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_input_mouse_wheel.vcxproj">
+      <Project>{FB3C67DB-2921-3EBB-8453-AF77D07048ED}</Project>
+      <Name>core_input_mouse_wheel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_input_multitouch.vcxproj">
+      <Project>{EC142547-C08B-3EC6-BD8D-49D35720FEDE}</Project>
+      <Name>core_input_multitouch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_input_virtual_controls.vcxproj">
+      <Project>{E1302805-12EB-3B30-9DCC-CAD605864785}</Project>
+      <Name>core_input_virtual_controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_random_sequence.vcxproj">
+      <Project>{0FCB7026-1C2B-3220-B535-34B7D5EAD199}</Project>
+      <Name>core_random_sequence</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_random_values.vcxproj">
+      <Project>{CC4B7348-A3A9-3A29-964D-0C7EFC0CC837}</Project>
+      <Name>core_random_values</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_render_texture.vcxproj">
+      <Project>{570CD37F-068B-3F5C-87BA-444D02A1A1F7}</Project>
+      <Name>core_render_texture</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_scissor_test.vcxproj">
+      <Project>{E1A91A53-8824-3C64-A0D8-2ACC237F8E0A}</Project>
+      <Name>core_scissor_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_smooth_pixelperfect.vcxproj">
+      <Project>{BF638AFF-DADD-3B26-A6AA-D87DA176C14B}</Project>
+      <Name>core_smooth_pixelperfect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_storage_values.vcxproj">
+      <Project>{84B49630-1A6E-3642-B921-317D50911A56}</Project>
+      <Name>core_storage_values</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_undo_redo.vcxproj">
+      <Project>{11373ECA-36B9-3EEC-AEB9-FA5F1A1F0016}</Project>
+      <Name>core_undo_redo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_vr_simulator.vcxproj">
+      <Project>{85D5AE64-0C0E-3FF7-8061-647F7ED8BA5E}</Project>
+      <Name>core_vr_simulator</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_window_flags.vcxproj">
+      <Project>{F6E26041-5622-3A33-935E-29F7940EA3D5}</Project>
+      <Name>core_window_flags</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_window_letterbox.vcxproj">
+      <Project>{417F6E2E-CCF0-3510-8C33-E6FCE4FD96CC}</Project>
+      <Name>core_window_letterbox</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_window_should_close.vcxproj">
+      <Project>{8BCC988B-3A33-3501-8460-25FC5BD53DA6}</Project>
+      <Name>core_window_should_close</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\core_world_screen.vcxproj">
+      <Project>{CAEC8A9D-64C1-3D56-A684-DD0C84D4BA13}</Project>
+      <Name>core_world_screen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\easings_testbed.vcxproj">
+      <Project>{E232ADE4-0D33-3491-9F21-EF044AC2BD63}</Project>
+      <Name>easings_testbed</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\embedded_files_loading.vcxproj">
+      <Project>{7D636A3E-1339-3CA0-8295-C61827F3E6AD}</Project>
+      <Name>embedded_files_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.vcxproj">
+      <Project>{3C6F60B8-3572-3E29-A0AE-D54EAE915670}</Project>
+      <Name>glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_animation_gpu_skinning.vcxproj">
+      <Project>{893F3A16-6F0B-3D93-AC26-2FE8474FDD63}</Project>
+      <Name>models_animation_gpu_skinning</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_animation_playing.vcxproj">
+      <Project>{19537453-8664-32AE-8FDC-E55EB1B428E0}</Project>
+      <Name>models_animation_playing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_billboard_rendering.vcxproj">
+      <Project>{3C4FBDFA-0C79-334F-8CE0-DDA86F33C687}</Project>
+      <Name>models_billboard_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_bone_socket.vcxproj">
+      <Project>{5CB68559-3F73-3E43-822B-C3511662029A}</Project>
+      <Name>models_bone_socket</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_box_collisions.vcxproj">
+      <Project>{E16DCCBE-C147-3DAF-BC28-95C46FA75D4A}</Project>
+      <Name>models_box_collisions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_cubicmap_rendering.vcxproj">
+      <Project>{3B1D86FE-BE53-3766-88E3-6E7718E4A261}</Project>
+      <Name>models_cubicmap_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_first_person_maze.vcxproj">
+      <Project>{C38E339C-AC0B-3453-ADCF-0B1AB2AA77A9}</Project>
+      <Name>models_first_person_maze</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_geometric_shapes.vcxproj">
+      <Project>{075A0B32-4BDA-3F0E-A5B5-BE0837027895}</Project>
+      <Name>models_geometric_shapes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_heightmap_rendering.vcxproj">
+      <Project>{A4A1718B-BBAD-3A48-86A5-CB4055234022}</Project>
+      <Name>models_heightmap_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_loading.vcxproj">
+      <Project>{C4182632-8688-314F-8095-A463CADCC411}</Project>
+      <Name>models_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_loading_gltf.vcxproj">
+      <Project>{DE1DD93A-31A3-3351-9ECE-FC6B097BE07E}</Project>
+      <Name>models_loading_gltf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_loading_m3d.vcxproj">
+      <Project>{0820E22C-BC44-3CA0-8005-F0945BC4F808}</Project>
+      <Name>models_loading_m3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_loading_vox.vcxproj">
+      <Project>{3D7A0A62-AF6E-34AD-811D-8F5D15E119F0}</Project>
+      <Name>models_loading_vox</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_mesh_generation.vcxproj">
+      <Project>{47516DF3-3562-3A2C-9791-35B70740F3DA}</Project>
+      <Name>models_mesh_generation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_mesh_picking.vcxproj">
+      <Project>{DDAED3DB-953B-3697-9FA6-A9B6795B56C7}</Project>
+      <Name>models_mesh_picking</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_orthographic_projection.vcxproj">
+      <Project>{83D83450-B400-3607-8260-51E7CAE2221C}</Project>
+      <Name>models_orthographic_projection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_point_rendering.vcxproj">
+      <Project>{E1FBFEF1-FB9E-3FDC-9996-2E153D141610}</Project>
+      <Name>models_point_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_rlgl_solar_system.vcxproj">
+      <Project>{CE22CCE4-DF17-31F5-8E5B-ACBC1D612F18}</Project>
+      <Name>models_rlgl_solar_system</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_skybox_rendering.vcxproj">
+      <Project>{8EC5341C-026C-3236-9A38-2EB08843EB8A}</Project>
+      <Name>models_skybox_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_tesseract_view.vcxproj">
+      <Project>{D6ED11D1-560A-3C92-A914-34DCFB5F724C}</Project>
+      <Name>models_tesseract_view</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_textured_cube.vcxproj">
+      <Project>{87EA2245-8C08-3474-B67D-37C661690EF1}</Project>
+      <Name>models_textured_cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_waving_cubes.vcxproj">
+      <Project>{8594EBCF-BA74-3889-A4CC-56CA3B128517}</Project>
+      <Name>models_waving_cubes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\models_yaw_pitch_roll.vcxproj">
+      <Project>{D07C8B04-9EC5-3128-ABB4-245DE2703690}</Project>
+      <Name>models_yaw_pitch_roll</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\raylib.vcxproj">
+      <Project>{C0349AF0-3DCD-3221-8B61-CDBE3E2AC8DC}</Project>
+      <Name>raylib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\raylib_opengl_interop.vcxproj">
+      <Project>{51ED4209-B246-3722-9FC4-EFEA0EACB2CB}</Project>
+      <Name>raylib_opengl_interop</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\raymath_vector_angle.vcxproj">
+      <Project>{A40EF72F-B1C1-34F5-91F0-66AF1264220E}</Project>
+      <Name>raymath_vector_angle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\rlgl_compute_shader.vcxproj">
+      <Project>{79FDC605-7886-329B-965C-EF87E11BB2F5}</Project>
+      <Name>rlgl_compute_shader</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\rlgl_standalone.vcxproj">
+      <Project>{2CB3E9AF-D624-31BE-9B20-B0AEE674BF31}</Project>
+      <Name>rlgl_standalone</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_basic_lighting.vcxproj">
+      <Project>{95EB675C-A4AB-351B-B7F9-48E41E46CD7B}</Project>
+      <Name>shaders_basic_lighting</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_basic_pbr.vcxproj">
+      <Project>{3B2F54BB-EFA2-3ABB-AD78-D5017420CD0C}</Project>
+      <Name>shaders_basic_pbr</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_custom_uniform.vcxproj">
+      <Project>{EF2D6D65-48A4-387E-8409-C48CC735F568}</Project>
+      <Name>shaders_custom_uniform</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_deferred_rendering.vcxproj">
+      <Project>{0830D0A4-E8FC-3BE1-863B-1B9C1120D4A7}</Project>
+      <Name>shaders_deferred_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_depth_rendering.vcxproj">
+      <Project>{0FEE7D3B-AAF7-307B-967C-4A140C35A6AD}</Project>
+      <Name>shaders_depth_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_depth_writing.vcxproj">
+      <Project>{61E61224-1387-3AE7-BB5C-A9DA8951482B}</Project>
+      <Name>shaders_depth_writing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_eratosthenes_sieve.vcxproj">
+      <Project>{01268C15-8EA3-3E39-932B-62F54EBA4DEF}</Project>
+      <Name>shaders_eratosthenes_sieve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_fog_rendering.vcxproj">
+      <Project>{EA065EDD-5987-38C8-921D-A54CECAE3BD4}</Project>
+      <Name>shaders_fog_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_hot_reloading.vcxproj">
+      <Project>{B1E35527-00C4-344D-AE00-3CDFE9299C00}</Project>
+      <Name>shaders_hot_reloading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_hybrid_rendering.vcxproj">
+      <Project>{EFAD6D6B-3771-3A4A-ADD5-C7962583D7B6}</Project>
+      <Name>shaders_hybrid_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_julia_set.vcxproj">
+      <Project>{054EA743-2894-3EFD-8EF4-2D754432BA78}</Project>
+      <Name>shaders_julia_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_lightmap_rendering.vcxproj">
+      <Project>{9898F154-07A3-3F89-816A-117962093C2E}</Project>
+      <Name>shaders_lightmap_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_mesh_instancing.vcxproj">
+      <Project>{4CE36645-01B5-32FD-BC39-25D5677B86DE}</Project>
+      <Name>shaders_mesh_instancing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_model_shader.vcxproj">
+      <Project>{64E30B18-4F4A-310B-B2D6-9BF5B1C36B9D}</Project>
+      <Name>shaders_model_shader</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_multi_sample2d.vcxproj">
+      <Project>{F667A989-9C3A-3965-AC21-4273AEFCE685}</Project>
+      <Name>shaders_multi_sample2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_normalmap_rendering.vcxproj">
+      <Project>{9A76B31C-009F-35F7-9C59-497A75D36869}</Project>
+      <Name>shaders_normalmap_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_palette_switch.vcxproj">
+      <Project>{E40B0AFE-F37B-33BB-BA6B-762258587B30}</Project>
+      <Name>shaders_palette_switch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_postprocessing.vcxproj">
+      <Project>{3AA746E6-9FBE-309A-8046-FF1FDB67674A}</Project>
+      <Name>shaders_postprocessing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_raymarching_rendering.vcxproj">
+      <Project>{E46F6FE9-EA58-3596-82E6-E963C678A9DA}</Project>
+      <Name>shaders_raymarching_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_rounded_rectangle.vcxproj">
+      <Project>{6E568F6F-1819-3AF5-86E3-9C1CEFAADF09}</Project>
+      <Name>shaders_rounded_rectangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_shadowmap_rendering.vcxproj">
+      <Project>{477C0D87-651C-3D2B-9B8A-8FC6D2199C96}</Project>
+      <Name>shaders_shadowmap_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_shapes_textures.vcxproj">
+      <Project>{66BB96F4-9A8B-3FC0-A54E-4CD94957E8FD}</Project>
+      <Name>shaders_shapes_textures</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_simple_mask.vcxproj">
+      <Project>{F261A690-5C73-386C-A617-CA0E53D5BD5C}</Project>
+      <Name>shaders_simple_mask</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_spotlight_rendering.vcxproj">
+      <Project>{A26F6D4F-1745-384D-9BCB-75681BDED4B1}</Project>
+      <Name>shaders_spotlight_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_texture_outline.vcxproj">
+      <Project>{B27B93EA-8A08-357E-B812-6DDB352CBCE0}</Project>
+      <Name>shaders_texture_outline</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_texture_rendering.vcxproj">
+      <Project>{613569BF-FD7B-3F05-B067-7C45CD28421F}</Project>
+      <Name>shaders_texture_rendering</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_texture_tiling.vcxproj">
+      <Project>{D4039939-E0A1-37C9-918F-58E2632BBB6A}</Project>
+      <Name>shaders_texture_tiling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_texture_waves.vcxproj">
+      <Project>{9C8D49EC-D040-3C5C-8732-5D9361E28581}</Project>
+      <Name>shaders_texture_waves</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shaders_vertex_displacement.vcxproj">
+      <Project>{890EA13C-D136-3102-9996-0DBBED3DF70E}</Project>
+      <Name>shaders_vertex_displacement</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_basic_shapes.vcxproj">
+      <Project>{B466D9AD-C3C5-322E-B012-E3CB62DCB379}</Project>
+      <Name>shapes_basic_shapes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_bouncing_ball.vcxproj">
+      <Project>{89A20880-4748-3003-A506-7A46BC813D75}</Project>
+      <Name>shapes_bouncing_ball</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_circle_sector_drawing.vcxproj">
+      <Project>{74954C6D-3314-3F8F-827D-684122C70647}</Project>
+      <Name>shapes_circle_sector_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_collision_area.vcxproj">
+      <Project>{89EC9F9F-9C06-31FE-AF1B-D368347E571A}</Project>
+      <Name>shapes_collision_area</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_colors_palette.vcxproj">
+      <Project>{1C0852E2-5A29-3F6B-B2EA-7C120330A4BB}</Project>
+      <Name>shapes_colors_palette</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_digital_clock.vcxproj">
+      <Project>{798D8A65-8CC5-3ED2-A477-B291FAE3E7C0}</Project>
+      <Name>shapes_digital_clock</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_double_pendulum.vcxproj">
+      <Project>{1EEAA9CE-C83F-3628-A5AC-843C051608B5}</Project>
+      <Name>shapes_double_pendulum</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_easings_ball.vcxproj">
+      <Project>{6B9962CA-C40A-3ED4-B938-EF3A61F1D50F}</Project>
+      <Name>shapes_easings_ball</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_easings_box.vcxproj">
+      <Project>{72D25041-22E7-3F5F-811D-EEE8C6058002}</Project>
+      <Name>shapes_easings_box</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_easings_rectangles.vcxproj">
+      <Project>{5BC7ED2B-3680-37B5-B632-9BC21A9F9C08}</Project>
+      <Name>shapes_easings_rectangles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_following_eyes.vcxproj">
+      <Project>{9ED434E2-659D-3146-91C2-D3C46503E2D0}</Project>
+      <Name>shapes_following_eyes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_lines_bezier.vcxproj">
+      <Project>{5CC598A6-EEE8-37C6-810C-FEF3D5E95719}</Project>
+      <Name>shapes_lines_bezier</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_logo_raylib.vcxproj">
+      <Project>{317DAF57-A516-3009-9727-EFE86E237693}</Project>
+      <Name>shapes_logo_raylib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_logo_raylib_anim.vcxproj">
+      <Project>{E6F9FCE5-A9BA-3AFB-9F20-5555A0B8A85D}</Project>
+      <Name>shapes_logo_raylib_anim</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_rectangle_advanced.vcxproj">
+      <Project>{54DEC473-11DF-3401-8C0F-A8876E08221F}</Project>
+      <Name>shapes_rectangle_advanced</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_rectangle_scaling.vcxproj">
+      <Project>{80FED428-49BE-3668-9A1A-BCC955B4A22E}</Project>
+      <Name>shapes_rectangle_scaling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_ring_drawing.vcxproj">
+      <Project>{373999A1-C8C7-3071-9858-E3E22AAD6AB4}</Project>
+      <Name>shapes_ring_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_rounded_rectangle_drawing.vcxproj">
+      <Project>{0C8ABF73-0DDE-32D4-9C06-E4494AEED372}</Project>
+      <Name>shapes_rounded_rectangle_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_splines_drawing.vcxproj">
+      <Project>{04F01788-9F20-3817-93B4-08C2CBDF02D3}</Project>
+      <Name>shapes_splines_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\shapes_top_down_lights.vcxproj">
+      <Project>{5D3800E0-C050-35B6-AA45-67AE69029436}</Project>
+      <Name>shapes_top_down_lights</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_3d_drawing.vcxproj">
+      <Project>{128E5E4B-5A2C-3DC9-B6AE-6FC092106CF6}</Project>
+      <Name>text_3d_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_codepoints_loading.vcxproj">
+      <Project>{73568714-90BE-3783-9D63-EB5169846794}</Project>
+      <Name>text_codepoints_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_font_filters.vcxproj">
+      <Project>{2D798BD0-5F62-3E24-928B-84AF9D712D87}</Project>
+      <Name>text_font_filters</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_font_loading.vcxproj">
+      <Project>{91AF8815-FA57-3F86-8BBE-D99C84DA752C}</Project>
+      <Name>text_font_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_font_sdf.vcxproj">
+      <Project>{AE3DF84F-0127-3230-A6C0-3BC19A3AD612}</Project>
+      <Name>text_font_sdf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_font_spritefont.vcxproj">
+      <Project>{36DA2850-52F3-3E4F-9C33-FAE91D2CF15D}</Project>
+      <Name>text_font_spritefont</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_format_text.vcxproj">
+      <Project>{EC194F97-3516-3C2D-9B04-EB26E5715BFD}</Project>
+      <Name>text_format_text</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_inline_styling.vcxproj">
+      <Project>{79AE4D87-6978-31A8-8838-D8E1EFE2BD8F}</Project>
+      <Name>text_inline_styling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_input_box.vcxproj">
+      <Project>{5CA4FFE8-7465-368B-9590-0170A0A0FF9F}</Project>
+      <Name>text_input_box</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_rectangle_bounds.vcxproj">
+      <Project>{AB1E51A3-0B24-3FBE-ABBE-6EE8C5B05483}</Project>
+      <Name>text_rectangle_bounds</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_sprite_fonts.vcxproj">
+      <Project>{1344C35E-9952-3874-A57B-00075F3605EC}</Project>
+      <Name>text_sprite_fonts</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_unicode_emojis.vcxproj">
+      <Project>{FCC345EA-7E56-379F-A6A6-790BC8363B10}</Project>
+      <Name>text_unicode_emojis</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_unicode_ranges.vcxproj">
+      <Project>{764F2F01-5C10-393B-9BE6-CCDBB37168CA}</Project>
+      <Name>text_unicode_ranges</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\text_writing_anim.vcxproj">
+      <Project>{305F96B7-18E3-31A9-B9D7-025C5391055D}</Project>
+      <Name>text_writing_anim</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_background_scrolling.vcxproj">
+      <Project>{790F0262-D070-3CE7-965C-415157B5024B}</Project>
+      <Name>textures_background_scrolling</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_blend_modes.vcxproj">
+      <Project>{1722B4D8-06B6-38B7-86E8-8F5DEA242DEE}</Project>
+      <Name>textures_blend_modes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_bunnymark.vcxproj">
+      <Project>{F4B23092-DC06-32EA-9D23-E722D5ACEF3F}</Project>
+      <Name>textures_bunnymark</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_fog_of_war.vcxproj">
+      <Project>{1B5DA805-9B23-373B-B8F7-B03AA2C328A7}</Project>
+      <Name>textures_fog_of_war</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_gif_player.vcxproj">
+      <Project>{0E3A9962-7FD5-377E-9D6D-0335CD6FBBAF}</Project>
+      <Name>textures_gif_player</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_image_channel.vcxproj">
+      <Project>{2692853C-DD57-364E-B642-723ACAAE3780}</Project>
+      <Name>textures_image_channel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_image_drawing.vcxproj">
+      <Project>{69CDE747-2363-3615-B855-49A429D99C91}</Project>
+      <Name>textures_image_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_image_generation.vcxproj">
+      <Project>{228A99C0-A1D3-3CFC-AA49-D510B738CD8A}</Project>
+      <Name>textures_image_generation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_image_kernel.vcxproj">
+      <Project>{E364431D-934A-3ACF-8F3C-50994D2FA7A1}</Project>
+      <Name>textures_image_kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_image_loading.vcxproj">
+      <Project>{76C0ADAD-31CD-3F32-8217-3BBACE5CBD57}</Project>
+      <Name>textures_image_loading</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_image_processing.vcxproj">
+      <Project>{76527FA5-40D2-3901-88B8-7CD0893788C9}</Project>
+      <Name>textures_image_processing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_image_rotate.vcxproj">
+      <Project>{C9003E1C-6239-3957-A2F0-B3F0B28DE93C}</Project>
+      <Name>textures_image_rotate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_image_text.vcxproj">
+      <Project>{217ECA87-F1A5-3D7A-B902-AF4AC30FF1CD}</Project>
+      <Name>textures_image_text</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_logo_raylib.vcxproj">
+      <Project>{BC188902-4082-3AC6-8DD8-9DFA6F169848}</Project>
+      <Name>textures_logo_raylib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_mouse_painting.vcxproj">
+      <Project>{693F7288-4EA4-37C1-AD16-1A459960959E}</Project>
+      <Name>textures_mouse_painting</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_npatch_drawing.vcxproj">
+      <Project>{1911D616-9AD9-3F79-AA05-BF3BDF2E7981}</Project>
+      <Name>textures_npatch_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_particles_blending.vcxproj">
+      <Project>{55F14EF3-2217-3645-A861-F17B761010AB}</Project>
+      <Name>textures_particles_blending</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_polygon_drawing.vcxproj">
+      <Project>{0D6E7E9E-FAC8-37FE-A6FA-5EDA904977DA}</Project>
+      <Name>textures_polygon_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_raw_data.vcxproj">
+      <Project>{C432504A-16D3-3EF1-A5E5-895A046FC34D}</Project>
+      <Name>textures_raw_data</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_sprite_animation.vcxproj">
+      <Project>{D0E0AAB3-D414-3493-B74E-F272366F19AD}</Project>
+      <Name>textures_sprite_animation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_sprite_button.vcxproj">
+      <Project>{FC7F79C3-3798-3061-95C5-82AEDCBA6691}</Project>
+      <Name>textures_sprite_button</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_sprite_explosion.vcxproj">
+      <Project>{CF7CC045-8122-3004-97A6-826C23860789}</Project>
+      <Name>textures_sprite_explosion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_srcrec_dstrec.vcxproj">
+      <Project>{41A845A0-6BF3-3106-A505-1C46BE0A09DE}</Project>
+      <Name>textures_srcrec_dstrec</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_textured_curve.vcxproj">
+      <Project>{E77CB929-8F47-3A9E-A5E8-0BE3F4281867}</Project>
+      <Name>textures_textured_curve</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_tiled_drawing.vcxproj">
+      <Project>{36B2017B-0D58-3F25-A674-471926F510CC}</Project>
+      <Name>textures_tiled_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\textures_to_image.vcxproj">
+      <Project>{D956C32C-4569-3730-A1B6-DC3DC9FED2A5}</Project>
+      <Name>textures_to_image</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\examples\web_basic_window.vcxproj">
+      <Project>{01101B9A-12A1-3B93-B68E-9C1814A5B2FA}</Project>
+      <Name>web_basic_window</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

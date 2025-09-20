@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\3199e1ef0a6c5a516ca0a25de2eefcff\download_test_data_project-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\3199e1ef0a6c5a516ca0a25de2eefcff\download_test_data_project-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\3199e1ef0a6c5a516ca0a25de2eefcff\download_test_data_project-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\3199e1ef0a6c5a516ca0a25de2eefcff\download_test_data_project-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\3199e1ef0a6c5a516ca0a25de2eefcff\download_test_data_project-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\3199e1ef0a6c5a516ca0a25de2eefcff\download_test_data_project-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\3199e1ef0a6c5a516ca0a25de2eefcff\download_test_data_project-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\98ac9647effed670e1d441cbe656648f\download_test_data_project-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\CMakeFiles\ab9986e91f4316031c38eef23f8ab11d\download_test_data_project.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\CMakeFiles\download_test_data_project" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0AE42C3F-1314-3B8A-AFD6-352DDAEB3155}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

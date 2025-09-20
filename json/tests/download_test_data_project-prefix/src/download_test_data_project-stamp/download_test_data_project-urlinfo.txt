@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/nikme/source/repos/GameBuilder/json/tests/download_test_data_project-prefix/src/download_test_data_project-stamp/download-download_test_data_project.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/nikme/source/repos/GameBuilder/json/tests/download_test_data_project-prefix/src/download_test_data_project-stamp/verify-download_test_data_project.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/nikme/source/repos/GameBuilder/json/tests/download_test_data_project-prefix/src/download_test_data_project-stamp/extract-download_test_data_project.cmake
+source_dir=C:/Users/nikme/source/repos/GameBuilder/json/test_files
+work_dir=C:/Users/nikme/source/repos/GameBuilder/json
+url(s)=https://github.com/nlohmann/json_test_data/archive/refs/tags/v3.1.0.zip
+hash=
+      no_extract=
+

@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/nikme/source/repos/GameBuilder/raylib/cmake_install.cmake",
+		"C:/Users/nikme/source/repos/GameBuilder/raylib/raylib/cmake_install.cmake",
+		"C:/Users/nikme/source/repos/GameBuilder/raylib/raylib/external/glfw/cmake_install.cmake",
+		"C:/Users/nikme/source/repos/GameBuilder/raylib/raylib/external/glfw/src/cmake_install.cmake",
+		"C:/Users/nikme/source/repos/GameBuilder/raylib/examples/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

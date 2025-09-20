@@ -1,0 +1,5 @@
+C:/Users/nikme/source/repos/GameBuilder/lwlog/CMakeFiles/lwlog_lib.dir
+C:/Users/nikme/source/repos/GameBuilder/lwlog/CMakeFiles/lwlog_sandbox.dir
+C:/Users/nikme/source/repos/GameBuilder/lwlog/CMakeFiles/INSTALL.dir
+C:/Users/nikme/source/repos/GameBuilder/lwlog/CMakeFiles/ALL_BUILD.dir
+C:/Users/nikme/source/repos/GameBuilder/lwlog/CMakeFiles/ZERO_CHECK.dir

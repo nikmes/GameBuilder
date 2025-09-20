@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\src\unit-json_pointer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="C:\Users\nikme\source\repos\GameBuilder\json\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\nikme\source\repos\GameBuilder\json\tests\test_main.dir\$(Configuration)\unit.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{2D5E2AEB-4339-3E4F-9C7C-D6626D41FFC6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7AA3F76D-ED2E-3DC7-AE21-93A870E91451}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

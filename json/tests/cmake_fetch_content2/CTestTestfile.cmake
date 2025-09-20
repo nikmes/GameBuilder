@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2
+# Build directory: C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(cmake_fetch_content2_configure "C:/Program Files/CMake/bin/cmake.exe" "-G" "Visual Studio 17 2022" "-DCMAKE_CXX_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe" "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /EHsc" "-Dnlohmann_json_source=C:/Users/nikme/source/repos/GameBuilder/json" "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/project")
+  set_tests_properties(cmake_fetch_content2_configure PROPERTIES  FIXTURES_SETUP "cmake_fetch_content2" LABELS "git_required;not_reproducible" _BACKTRACE_TRIPLES "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;2;add_test;C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(cmake_fetch_content2_configure "C:/Program Files/CMake/bin/cmake.exe" "-G" "Visual Studio 17 2022" "-DCMAKE_CXX_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe" "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /EHsc" "-Dnlohmann_json_source=C:/Users/nikme/source/repos/GameBuilder/json" "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/project")
+  set_tests_properties(cmake_fetch_content2_configure PROPERTIES  FIXTURES_SETUP "cmake_fetch_content2" LABELS "git_required;not_reproducible" _BACKTRACE_TRIPLES "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;2;add_test;C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(cmake_fetch_content2_configure "C:/Program Files/CMake/bin/cmake.exe" "-G" "Visual Studio 17 2022" "-DCMAKE_CXX_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe" "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /EHsc" "-Dnlohmann_json_source=C:/Users/nikme/source/repos/GameBuilder/json" "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/project")
+  set_tests_properties(cmake_fetch_content2_configure PROPERTIES  FIXTURES_SETUP "cmake_fetch_content2" LABELS "git_required;not_reproducible" _BACKTRACE_TRIPLES "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;2;add_test;C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(cmake_fetch_content2_configure "C:/Program Files/CMake/bin/cmake.exe" "-G" "Visual Studio 17 2022" "-DCMAKE_CXX_COMPILER=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe" "-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /EHsc" "-Dnlohmann_json_source=C:/Users/nikme/source/repos/GameBuilder/json" "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/project")
+  set_tests_properties(cmake_fetch_content2_configure PROPERTIES  FIXTURES_SETUP "cmake_fetch_content2" LABELS "git_required;not_reproducible" _BACKTRACE_TRIPLES "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;2;add_test;C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;0;")
+else()
+  add_test(cmake_fetch_content2_configure NOT_AVAILABLE)
+endif()
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test(cmake_fetch_content2_build "C:/Program Files/CMake/bin/cmake.exe" "--build" ".")
+  set_tests_properties(cmake_fetch_content2_build PROPERTIES  FIXTURES_REQUIRED "cmake_fetch_content2" LABELS "git_required;not_reproducible" _BACKTRACE_TRIPLES "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;10;add_test;C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test(cmake_fetch_content2_build "C:/Program Files/CMake/bin/cmake.exe" "--build" ".")
+  set_tests_properties(cmake_fetch_content2_build PROPERTIES  FIXTURES_REQUIRED "cmake_fetch_content2" LABELS "git_required;not_reproducible" _BACKTRACE_TRIPLES "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;10;add_test;C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test(cmake_fetch_content2_build "C:/Program Files/CMake/bin/cmake.exe" "--build" ".")
+  set_tests_properties(cmake_fetch_content2_build PROPERTIES  FIXTURES_REQUIRED "cmake_fetch_content2" LABELS "git_required;not_reproducible" _BACKTRACE_TRIPLES "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;10;add_test;C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test(cmake_fetch_content2_build "C:/Program Files/CMake/bin/cmake.exe" "--build" ".")
+  set_tests_properties(cmake_fetch_content2_build PROPERTIES  FIXTURES_REQUIRED "cmake_fetch_content2" LABELS "git_required;not_reproducible" _BACKTRACE_TRIPLES "C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;10;add_test;C:/Users/nikme/source/repos/GameBuilder/json/tests/cmake_fetch_content2/CMakeLists.txt;0;")
+else()
+  add_test(cmake_fetch_content2_build NOT_AVAILABLE)
+endif()
