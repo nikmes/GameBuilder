@@ -4,3 +4,16 @@
 [submodule "rlImGui"]
 	path = rlImGui
 	url = https://github.com/raylib-extras/rlImGui.git
+[submodule "imgui"]
+	path = imgui
+	url = https://github.com/ocornut/imgui.git
+	branch = docking
+[submodule "json"]
+	path = json
+	url = https://github.com/nlohmann/json
+[submodule "lwlog"]
+	path = lwlog
+	url = https://github.com/ChristianPanov/lwlog.git
+[submodule "libccd"]
+	path = libccd
+	url = https://github.com/danfis/libccd.git
