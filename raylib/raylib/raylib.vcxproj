@@ -78,7 +78,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\nikme\source\repos\GameBuilder\raylib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\nikme\source\repos\MyGameBuilder\raylib\src\external\glfw\include;..\raylib\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/nikme/source/repos/GameBuilder/raylib/src/external/glfw/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -235,109 +235,46 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\CMakeLists.txt">
-      <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/raylib/src/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/raylib -BC:/Users/nikme/source/repos/GameBuilder/raylib --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/raylib/raylib/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\CompileDefinitions.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\GlfwImport.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\InstallConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\JoinPaths.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\LibraryConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\LibraryPathToLinkerFlags.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\PackConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\PopulateConfigVariablesLocally.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\raylib-config-version.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\raylib-config.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\raylib.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/raylib/src/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/raylib -BC:/Users/nikme/source/repos/GameBuilder/raylib --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/raylib/raylib/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\CompileDefinitions.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\GlfwImport.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\InstallConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\JoinPaths.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\LibraryConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\LibraryPathToLinkerFlags.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\PackConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\PopulateConfigVariablesLocally.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\raylib-config-version.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\raylib-config.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\raylib.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/raylib/src/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/raylib -BC:/Users/nikme/source/repos/GameBuilder/raylib --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/raylib/raylib/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\CompileDefinitions.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\GlfwImport.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\InstallConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\JoinPaths.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\LibraryConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\LibraryPathToLinkerFlags.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\PackConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\PopulateConfigVariablesLocally.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\raylib-config-version.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\raylib-config.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\raylib.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/nikme/source/repos/GameBuilder/raylib/src/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/nikme/source/repos/GameBuilder/raylib -BC:/Users/nikme/source/repos/GameBuilder/raylib --check-stamp-file C:/Users/nikme/source/repos/GameBuilder/raylib/raylib/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.0\Templates\CPackConfig.cmake.in;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\CompileDefinitions.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\GlfwImport.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\InstallConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\JoinPaths.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\LibraryConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\LibraryPathToLinkerFlags.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\PackConfigurations.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\PopulateConfigVariablesLocally.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\raylib-config-version.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\cmake\raylib-config.cmake;C:\Users\nikme\source\repos\GameBuilder\raylib\raylib.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
-    </CustomBuild>
+    <Object Include="external\glfw\src\glfw.dir\Debug\context.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\init.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\input.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\monitor.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\platform.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\vulkan.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\window.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\egl_context.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\osmesa_context.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\null_init.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\null_monitor.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\null_window.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\null_joystick.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_module.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_time.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_thread.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_init.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_joystick.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_monitor.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_window.obj" />
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\wgl_context.obj" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\raudio.c" />
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rcore.c" />
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rmodels.c" />
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rshapes.c" />
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rtext.c" />
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rtextures.c" />
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\utils.c" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\context.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\init.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\input.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\monitor.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\platform.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\vulkan.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\window.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\egl_context.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\osmesa_context.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\null_init.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\null_monitor.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\null_window.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\null_joystick.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_module.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_time.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_thread.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_init.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_joystick.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_monitor.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_window.obj" />
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\wgl_context.obj" />
-    <ClInclude Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\raylib.h" />
-    <ClInclude Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rcamera.h" />
-    <ClInclude Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rlgl.h" />
-    <ClInclude Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\raymath.h" />
+    <ClInclude Include="include\raylib.h" />
+    <ClInclude Include="include\raymath.h" />
+    <ClInclude Include="include\rcamera.h" />
+    <ClInclude Include="include\rlgl.h" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\ZERO_CHECK.vcxproj">
-      <Project>{6C136158-B4F4-36D1-B85D-193ACB19E386}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-    <ProjectReference Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.vcxproj">
-      <Project>{3C6F60B8-3572-3E29-A0AE-D54EAE915670}</Project>
-      <Name>glfw</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    <ClCompile Include="..\src\raudio.c" />
+    <ClCompile Include="..\src\rcore.c" />
+    <ClCompile Include="..\src\rmodels.c" />
+    <ClCompile Include="..\src\rshapes.c" />
+    <ClCompile Include="..\src\rtext.c" />
+    <ClCompile Include="..\src\rtextures.c" />
+    <ClCompile Include="..\src\utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="external\glfw\src\glfw.vcxproj">
+      <Project>{3c6f60b8-3572-3e29-a0ae-d54eae915670}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

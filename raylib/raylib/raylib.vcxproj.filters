@@ -1,107 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\raudio.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rcore.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rmodels.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rshapes.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rtext.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rtextures.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\utils.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\raylib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rcamera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\rlgl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\raymath.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="C:\Users\nikme\source\repos\GameBuilder\raylib\src\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\context.obj">
+    <Object Include="external\glfw\src\glfw.dir\Debug\context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\init.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\egl_context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\input.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\init.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\monitor.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\input.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\platform.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\monitor.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\vulkan.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\null_init.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\window.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\null_joystick.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\egl_context.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\null_monitor.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\osmesa_context.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\null_window.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\null_init.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\osmesa_context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\null_monitor.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\platform.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\null_window.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\vulkan.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\null_joystick.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\wgl_context.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_module.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_init.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_time.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_joystick.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_thread.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_module.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_init.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_monitor.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_joystick.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_thread.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_monitor.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_time.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\win32_window.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\win32_window.obj">
       <Filter>Object Libraries</Filter>
     </Object>
-    <Object Include="C:\Users\nikme\source\repos\GameBuilder\raylib\raylib\external\glfw\src\glfw.dir\$(Configuration)\wgl_context.obj">
+    <Object Include="external\glfw\src\glfw.dir\$(Configuration)\window.obj">
       <Filter>Object Libraries</Filter>
     </Object>
   </ItemGroup>
@@ -115,5 +75,42 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{56B3EC5E-CDC4-3B0D-9181-69D9AB87E7DD}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\raylib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\raymath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rcamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rlgl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\raudio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rcore.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rmodels.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rshapes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtext.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rtextures.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
